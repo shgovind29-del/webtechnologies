@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Technologies</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(-45deg,#ff512f,#dd2476,#24c6dc,#514a9d,#00bf8f);
+  background-size:400% 400%;
+  animation:bg 15s ease infinite;
+  color:white;
+}
+@keyframes bg{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+h1{
+  text-align:center;
+  font-size:56px;
+  margin:20px;
+  text-shadow:3px 3px 8px #000;
+}
+.main{
+  display:flex;
+  height:calc(100vh - 110px);
+}
+.menu{
+  width:25%;
+  background:rgba(0,0,0,0.7);
+  padding:20px;
+  overflow-y:auto;
+}
+.menu div{
+  padding:15px;
+  margin-bottom:12px;
+  background:linear-gradient(45deg,#ff9800,#ff5722);
+  cursor:pointer;
+  border-radius:10px;
+  text-align:center;
+  font-size:20px;
+  transition:0.4s;
+}
+.menu div:hover{
+  transform:scale(1.05);
+  background:linear-gradient(45deg,#00e5ff,#1de9b6);
+}
+.content{
+  width:75%;
+  padding:30px;
+  overflow-y:auto;
+  background:rgba(0,0,0,0.35);
+}
+h2{color:#ffeb3b}
+h3{color:#00e5ff;margin-top:25px}
+p{
+  line-height:1.8;
+  background:rgba(255,255,255,0.08);
+  padding:12px;
+  border-radius:8px;
+  animation:fade 0.6s ease;
+}
+@keyframes fade{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<h1>WEB TECHNOLOGIES</h1>
+
+<div class="main">
+  <div class="menu">
+    <div onclick="show('u1')">UNIT – I</div>
+    <div onclick="show('u2')">UNIT – II</div>
+    <div onclick="show('u3')">UNIT – III</div>
+    <div onclick="show('u4')">UNIT – IV</div>
+    <div onclick="show('u5')">UNIT – V</div>
+  </div>
+
+  <div class="content" id="content">
+    <h2>Select a UNIT from the left side</h2>
+  </div>
+</div>
+
+<script>
+function show(u){
+const d={
+
+/* ================== UNIT 1 ================== */
+u1:`<h2>UNIT – I : HTML & Web Basics</h2>
+
+<h3>Introduction to Web Technology</h3>
+<p>Web technology refers to tools and techniques used to build websites.
+It works using web browsers, servers, and the internet.
+Web technology allows global sharing of information.
+It supports online business and education.
+It is essential in modern communication.</p>
+
+<h3>HTML</h3>
+<p>HTML stands for HyperText Markup Language.
+It is used to create the structure of web pages.
+HTML uses tags to define content.
+It is easy to learn and platform independent.
+Every website uses HTML.</p>
+
+<h3>Types of HTML Tags</h3>
+<p>HTML tags are divided into paired and unpaired tags.
+Paired tags have opening and closing tags.
+Unpaired tags have only one tag.
+Tags help browsers understand content.
+They define page structure.</p>
+
+<h3>Basic Structure of HTML</h3>
+<p>An HTML document contains head and body sections.
+The head stores title and meta information.
+The body displays visible content.
+DOCTYPE defines HTML version.
+Proper structure avoids errors.</p>
+
+<h3>Web Design Principles</h3>
+<p>Web design principles focus on usability.
+Design should be simple and clear.
+Consistency improves user experience.
+Readable fonts are important.
+Navigation should be easy.</p>
+
+<h3>HTML Attributes</h3>
+<p>Attributes provide extra information to elements.
+They are written inside opening tags.
+Examples include id and class.
+Attributes improve functionality.
+Used for styling and scripting.</p>
+
+<h3>Styles</h3>
+<p>Styles control the appearance of web pages.
+CSS is used for styling.
+Styles manage colors and fonts.
+They improve page look.
+Enhance user experience.</p>
+
+<h3>Hypertext</h3>
+<p>Hypertext allows linking documents.
+Users move between pages easily.
+Hyperlinks are used.
+It forms the web.
+Improves navigation.</p>
+
+<h3>Formatting Text</h3>
+<p>Formatting highlights important text.
+Bold and italic styles are used.
+Improves readability.
+Used in content presentation.
+Enhances clarity.</p>
+
+<h3>Forms and Form Elements</h3>
+<p>Forms collect user input.
+They contain input fields and buttons.
+Used in login and registration pages.
+Data is sent to server.
+Enable interaction.</p>
+
+<h3>Commenting Code</h3>
+<p>Comments explain HTML code.
+Ignored by browsers.
+Improve readability.
+Help developers.
+Useful for maintenance.</p>
+
+<h3>Backgrounds</h3>
+<p>Backgrounds improve design.
+Colors or images are used.
+CSS controls backgrounds.
+Enhances appearance.
+Improves UI.</p>
+
+<h3>Images</h3>
+<p>Images add visual meaning.
+Added using img tag.
+Improve attractiveness.
+Optimized images load faster.
+Increase engagement.</p>
+
+<h3>Hyperlinks</h3>
+<p>Hyperlinks connect web pages.
+Created using anchor tag.
+Enable navigation.
+Link resources.
+Core web feature.</p>
+
+<h3>Lists</h3>
+<p>Lists organize information.
+Ordered and unordered lists exist.
+Improve clarity.
+Used in menus.
+Easy to read.</p>
+
+<h3>Tables</h3>
+<p>Tables display data in rows.
+Used for structured data.
+Improve understanding.
+Used in reports.
+Present records.</p>
+
+<h3>Frames</h3>
+<p>Frames divide browser window.
+Show multiple pages.
+Used in old websites.
+Rare today.
+Replaced by CSS.</p>`,
+
+/* ================== UNIT 2 ================== */
+u2:`<h2>UNIT – II : Dynamic Web Pages & CSS</h2>
+
+<h3>Dynamic Web Pages</h3>
+<p>Dynamic web pages change content based on user actions.
+They do not show the same content every time.
+Scripts and databases are used.
+They are interactive.
+Most modern websites use them.</p>
+
+<h3>Dynamic HTML</h3>
+<p>Dynamic HTML is a combination of HTML, CSS, and JavaScript.
+It updates content without page reload.
+User actions trigger changes.
+Improves performance.
+Enhances interaction.</p>
+
+<h3>Cascading Style Sheets (CSS)</h3>
+<p>CSS styles web pages.
+Controls colors, fonts, and layout.
+Separates content from design.
+Improves consistency.
+Easy maintenance.</p>
+
+<h3>Types of CSS</h3>
+<p>Inline CSS applies to single elements.
+Internal CSS applies to one page.
+External CSS applies to multiple pages.
+External CSS is preferred.
+Simplifies design.</p>
+
+<h3>Advantages of CSS</h3>
+<p>CSS reduces code repetition.
+Improves website speed.
+Easy design changes.
+Uniform appearance.
+Supports responsiveness.</p>
+
+<h3>CSS Syntax and Structure</h3>
+<p>CSS consists of selectors and declarations.
+Selectors select HTML elements.
+Declarations define properties.
+Syntax is simple.
+Easy to learn.</p>
+
+<h3>Changing Text and Attributes</h3>
+<p>CSS changes text color and size.
+Attributes can be styled.
+Hover effects are added.
+Improves look.
+Enhances interaction.</p>
+
+<h3>Dynamically Changing Style</h3>
+<p>Styles change on user action.
+Hover and focus are examples.
+Improves responsiveness.
+Makes pages interactive.
+Enhances UX.</p>
+
+<h3>Text Graphics and Placement</h3>
+<p>Controls text alignment.
+Spacing improves layout.
+Graphics enhance design.
+Proper placement improves readability.
+Important in web design.</p>
+
+<h3>Filters and Transitions</h3>
+<p>Filters add visual effects.
+Transitions create smooth animation.
+Improve appearance.
+Used in modern sites.
+Enhance experience.</p>`,
+
+/* ================== UNIT 3 ================== */
+u3:`<h2>UNIT – III : JavaScript</h2>
+
+<h3>JavaScript Introduction</h3>
+<p>JavaScript is a scripting language.
+Adds interactivity to websites.
+Runs in browser.
+Works with HTML and CSS.
+Widely used.</p>
+
+<h3>Client Side JavaScript</h3>
+<p>Runs in user browser.
+Fast execution.
+No server needed.
+Used for validation.
+Improves speed.</p>
+
+<h3>Server Side JavaScript</h3>
+<p>Runs on server.
+Handles backend logic.
+Works with databases.
+Improves security.
+Used in applications.</p>
+
+<h3>Core Features</h3>
+<p>Lightweight language.
+Event-driven.
+Dynamic typing.
+Platform independent.
+Easy to learn.</p>
+
+<h3>Data Types and Variables</h3>
+<p>Variables store data.
+Data types define value type.
+Includes numbers and strings.
+Used in programs.
+Basic concept.</p>
+
+<h3>Operators, Expressions and Statements</h3>
+<p>Operators perform operations.
+Expressions combine values.
+Statements control flow.
+Build logic.
+Essential in coding.</p>
+
+<h3>Functions</h3>
+<p>Reusable blocks of code.
+Reduce repetition.
+Improve clarity.
+Increase efficiency.
+Commonly used.</p>
+
+<h3>Objects</h3>
+<p>Objects store related data.
+Contain properties and methods.
+Organize data.
+Used in complex programs.
+Important concept.</p>
+
+<h3>Arrays</h3>
+<p>Store multiple values.
+Use index positions.
+Manage collections.
+Used in loops.
+Common structure.</p>
+
+<h3>Date and Math Objects</h3>
+<p>Date handles date and time.
+Math performs calculations.
+Built-in objects.
+Simplify coding.
+Useful in apps.</p>
+
+<h3>Document Object Model</h3>
+<p>DOM represents HTML as objects.
+Allows dynamic changes.
+JavaScript accesses elements.
+Used for interaction.
+Core concept.</p>
+
+<h3>Event Handling</h3>
+<p>Responds to user actions.
+Click and load events.
+Trigger functions.
+Add interactivity.
+Important feature.</p>`,
+
+/* ================== UNIT 4 ================== */
+u4:`<h2>UNIT – IV : Events</h2>
+
+<h3>Events Overview</h3>
+<p>Events are user or browser actions.
+Trigger JavaScript code.
+Used in dynamic pages.
+Improve interactivity.
+Core JS feature.</p>
+
+<h3>Mouse Events</h3>
+<p>Triggered by mouse actions.
+Includes click and double click.
+Mouseover and mouseout used.
+Used in menus.
+Very common.</p>
+
+<h3>Keyboard Events</h3>
+<p>Triggered by key actions.
+Includes keypress and keyup.
+Used in forms.
+Handle user input.
+Important events.</p>
+
+<h3>Form Events</h3>
+<p>Triggered during form actions.
+Submit and reset events.
+Used to validate data.
+Common in forms.
+Essential feature.</p>
+
+<h3>Window Events</h3>
+<p>Triggered by browser window.
+Load and resize events.
+Control page behavior.
+Used in scripts.
+Improve UX.</p>`,
+
+/* ================== UNIT 5 ================== */
+u5:`<h2>UNIT – V : XML</h2>
+
+<h3>XML Introduction</h3>
+<p>XML stands for Extensible Markup Language.
+Used to store and transport data.
+Uses custom tags.
+Platform independent.
+Used in data exchange.</p>
+
+<h3>Creating XML Documents</h3>
+<p>XML documents have tree structure.
+Contain root and child elements.
+Tags store data.
+Easy to read.
+Used widely.</p>
+
+<h3>XML Style Sheet</h3>
+<p>Controls display of XML data.
+Uses XSL.
+Separates data from design.
+Improves readability.
+Used for formatting.</p>
+
+<h3>XML DOM</h3>
+<p>Represents XML as objects.
+Allows element access.
+Data modification possible.
+Used with scripts.
+Important concept.</p>
+
+<h3>XML Query Language</h3>
+<p>Searches XML data.
+XPath commonly used.
+Extracts information.
+Improves efficiency.
+Important feature.</p>`
+};
+
+document.getElementById("content").innerHTML=d[u];
+}
+</script>
+
+</body>
+</html>
